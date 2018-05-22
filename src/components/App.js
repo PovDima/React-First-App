@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
-
-class App extends Component {
+import React from 'react'
+import Click from './Click'
+import Text from './Text'
+class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Welcome to My Starter App</h1>
+        <Text/>
+        <Click/>
+        <Text title='Welcome to My Second React App' text='Clicker123'/>
       </div>
+
     )
   }
 }
