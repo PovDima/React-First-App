@@ -19,7 +19,7 @@ class Click extends React.Component {
     this.setState((value) => ({ count: value.count - 1 }));
   }
   resCount() {
-    this.setState((value) => ({ count: 0 }));
+    this.setState(() => ({ count: 0 }));
   }
   render() {
     return (
@@ -46,7 +46,4 @@ Click.defaultProps = {
   count: 0
 };
 
-Click.propTypes = {
-  count: PropTypes.number
-};
 export default Click
