@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Click extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       count: props.count
     }
@@ -42,8 +42,4 @@ class Click extends React.Component {
     )
   }
 }
-Click.defaultProps = {
-  count: 0
-};
-
 export default Click

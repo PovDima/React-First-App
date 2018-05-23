@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 class Calc extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             a: props.a,
             b: props.b,
@@ -13,21 +13,20 @@ class Calc extends React.Component {
         this.changeB=this.changeB.bind(this);
     }
     calc() {
-        this.setState((value) => ({ result: this.state.a +this.state.b }))
+        this.setState(() => ({ result: this.state.a +this.state.b }))
     }
     changeA(e){
-        this.setState ({a:+e.target.value})
+        this.setState ({a:+e.target.value},()=>this.calc())
     }
     changeB(e){
-        this.setState ({b:+e.target.value})
+        this.setState ({b:+e.target.value},()=>this.calc())
     }
     render (){
         return(
             <div className='calc'>
             <div >Result = {this.state.result}</div>
-            <input onChange={this.changeA}  type='number'value={this.state.a} ></input>
+            <input onChange={this.changeA}  type='number'value={this.state.a} ></input> +
             <input onChange={this.changeB}   type='number' value={this.state.b} ></input>
-            <div  className='result'onClick={this.calc}>Calc</div>
             </div>
         )
     }

@@ -8,7 +8,7 @@ class App extends React.Component {
       <div>
         <Calc/>
         <Text/>
-        <Click/>
+        <Click count={0}/>
         <Text title='Welcome to My Second React App' text='Clicker123'/>
       </div>
 
