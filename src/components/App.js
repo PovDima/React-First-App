@@ -2,18 +2,15 @@ import React from 'react'
 import Click from './Click'
 import Text from './Text'
 import Calc from './Calc'
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Calc/>
-        <Text/>
-        <Click count={0}/>
-        <Text title='Welcome to My Second React App' text='Clicker123'/>
+        <Text title='Welcome to My First React App' text='Clicker' />
+        <Click count={0} />
+        <Text text='Calculator' title=''/>
+        <Calc operation={''}/>
       </div>
-
     )
   }
 }
-
-export default App

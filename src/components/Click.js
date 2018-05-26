@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-class Click extends React.Component {
+export default class Click extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,4 +42,3 @@ class Click extends React.Component {
     )
   }
 }
-export default Click
