@@ -15,7 +15,6 @@
     "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   },
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

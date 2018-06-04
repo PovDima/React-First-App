@@ -46,7 +46,8 @@ export default class Calc extends React.Component {
 }
 Calc.defaultProps = {
     a:6,
-    b:5
+    b:5,
+    operation : '+'
 };
 Calc.propTypes={
     a:PropTypes.number,
