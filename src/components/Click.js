@@ -28,7 +28,7 @@ export default class Click extends React.Component {
           {this.state.count}
         </div>
         <div className='buttons'>
-          <button className='btn1 btn' onClick={this.incCount}>
+          <button className='btn1 ' onClick={this.incCount}>
             +1
         </button>
           <button className='btn2' onClick={this.decCount}>
