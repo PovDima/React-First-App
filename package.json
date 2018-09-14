@@ -6,7 +6,10 @@
   "directories": {
     "test": "test"
   },
+  "homepage": "https://povdima.github.io/Drum-Machine",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "jest ./test"
@@ -39,6 +42,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "gh-pages": "^1.2.0",
     "npm": "^6.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
